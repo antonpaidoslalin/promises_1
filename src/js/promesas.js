@@ -12,3 +12,7 @@ const heroes = {
         poder:'La mejor reacción alérgica a las picaduras de araña'
     }
 }
+export const buscarHeroe=(id,) => {
+    const  heroe = heroes[id];
+
+    }
