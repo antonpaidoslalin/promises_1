@@ -15,4 +15,12 @@ const heroes = {
 export const buscarHeroe=(id,) => {
     const  heroe = heroes[id];
 
-    }
+    return new Promise((resolve, reject) => {
+        if (heroe){
+            resolve(heroe);
+        }else {
+            reject(`Non existe un heroe co identificador ${id}`);
+        }
+    });
+
+}
