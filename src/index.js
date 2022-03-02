@@ -1,5 +1,6 @@
 import './styles.css';
-// import { buscarHeroe } from "./js/callbacks.js";
+ import { buscarHeroe as buscarHeroeCallback } from "./js/callbacks.js";
+ import { buscarHeroe } from './js/promesas';
 const heroeID='capi';
 // buscarHeroe(heroeID, (err, heroe) => {
 //     // console.log('Chamamos callback');
