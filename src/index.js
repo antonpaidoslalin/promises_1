@@ -1,10 +1,16 @@
 import './styles.css';
 import { buscarHeroeAsync, buscarHeroe } from './js/promesas';
+import { obtenerHeroesArr } from './js/await';
 
-buscarHeroe ('capi2')
-    .then  (heroe => log(heroe))
-    .catch (err => console.warn(err));
+// buscarHeroe ('capi2')
+//     .then  (heroe => log(heroe))
+//     .catch (err => console.warn(err))
+//     .finally (()=> console.info('Busca finalizada'));
 
-buscarHeroeAsync ('iron2')
-    .then  (heroe => log(heroe))
-    .catch (err => console.warn(err));
+// buscarHeroeAsync ('iron2')
+//     .then  (heroe => log(heroe))
+//     .catch (err => console.warn(err))
+//     .finally (()=>console.info('Busca finalizada'));
+
+const heroes = obtenerHeroesArr();
+console.log(heroes);
