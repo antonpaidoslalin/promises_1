@@ -11,6 +11,4 @@ import { obtenerHeroesArr } from './js/await';
 //     .then  (heroe => log(heroe))
 //     .catch (err => console.warn(err))
 //     .finally (()=>console.info('Busca finalizada'));
-
-const heroes = obtenerHeroesArr();
-console.log(heroes);
+obtenerHeroesArr().then((heroesArr) => console.table(heroesArr),);
