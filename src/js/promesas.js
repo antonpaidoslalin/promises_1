@@ -33,7 +33,7 @@ export const buscarHeroeAsync=async (id) => {
         throw `No existe un héroe con el identificador ${id}`;
     }
     
-    }
+}
 
 
 // const promesaLenta = new Promise((resolve,reject)=> {
