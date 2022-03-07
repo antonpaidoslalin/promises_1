@@ -14,13 +14,18 @@ const heroes = {
 }
 export const buscarHeroe=(id) => {
     const  heroe = heroes[id];
-
+    console.time('T2');
     return new Promise((resolve, reject) => {
         if (heroe){
-            resolve(heroe);
-        }else {
+           console.info('antes setTimeout');
+            setTimeout(() => {
+                resolve(heroe)
+            }, 2000);
+            console.info('logo de timeout');
+        } else {
             reject(`Non existe un heroe co identificador ${id}`);
         }
+        console.timeEnd('T2');
     })
 }
 

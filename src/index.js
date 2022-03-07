@@ -1,6 +1,6 @@
 import './styles.css';
 import { buscarHeroeAsync, buscarHeroe } from './js/promesas';
-import { obtenerHeroesArr } from './js/await';
+import { obtenerHeroesArr, obtenerHeroesArrAwait, obtenerHeroeAsync } from './js/await';
 
 // buscarHeroe ('capi2')
 //     .then  (heroe => log(heroe))
@@ -11,4 +11,6 @@ import { obtenerHeroesArr } from './js/await';
 //     .then  (heroe => log(heroe))
 //     .catch (err => console.warn(err))
 //     .finally (()=>console.info('Busca finalizada'));
-obtenerHeroesArr().then((heroesArr) => console.table(heroesArr),);
+console.time('T1');
+obtenerHeroeAsync('capi2');
+console.timeEnd('T1');
